@@ -22,7 +22,7 @@ fun LogistrationLogoView() {
             .wrapContentWidth(),
         painter = painterResource(id = R.drawable.core_ic_logo),
         contentDescription = null,
-        colorFilter = ColorFilter.tint(MaterialTheme.appColors.primary)
+        //colorFilter = ColorFilter.tint(MaterialTheme.appColors.primary)
     )
 }
 
