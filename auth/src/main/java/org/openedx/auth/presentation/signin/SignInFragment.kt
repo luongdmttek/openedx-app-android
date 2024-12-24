@@ -24,8 +24,8 @@ class SignInFragment : Fragment() {
 
     private val viewModel: SignInViewModel by viewModel {
         parametersOf(
-            requireArguments().getString(ARG_COURSE_ID, ""),
-            requireArguments().getString(ARG_INFO_TYPE, "")
+            arguments?.getString(ARG_COURSE_ID, ""),
+            arguments?.getString(ARG_INFO_TYPE, "")
         )
     }
 

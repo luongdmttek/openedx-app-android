@@ -112,7 +112,7 @@ internal fun LoginScreen(
                         ),
                     compact = Modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 24.dp, vertical = 28.dp)
+                        .padding(horizontal = 24.dp, vertical = 8.dp)
                 )
             )
         }
@@ -125,14 +125,6 @@ internal fun LoginScreen(
             )
         }
 
-        Image(
-            modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight(0.3f),
-            painter = painterResource(id = coreR.drawable.core_top_header),
-            contentScale = ContentScale.FillBounds,
-            contentDescription = null
-        )
         HandleUIMessage(
             uiMessage = uiMessage,
             scaffoldState = scaffoldState
@@ -264,7 +256,7 @@ private fun AuthForm(
                 .fillMaxWidth()
                 .padding(top = 20.dp, bottom = 36.dp)
         ) {
-            if (state.isLogistrationEnabled.not() && state.isRegistrationEnabled) {
+            if (state.isLogistrationEnabled && state.isRegistrationEnabled) {
                 Text(
                     modifier = Modifier
                         .testTag("txt_register")

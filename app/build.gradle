@@ -37,7 +37,7 @@ android {
         versionCode 1
         versionName "1.0.0"
 
-        resourceConfigurations += ["en", "uk"]
+        resourceConfigurations += ["en", "vi"]
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

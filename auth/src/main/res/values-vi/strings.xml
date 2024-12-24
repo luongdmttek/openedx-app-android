@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pre_auth_explore_all_courses">Khám phá tất cả các khóa học</string>
+	<string name="auth_sign_up">Đăng ký</string>
+	<string name="auth_forgot_password">Quên mật khẩu\?</string>
+	<string name="auth_email">Email</string>
+	<string name="auth_invalid_email">Email không hợp lệ</string>
+	<string name="auth_email_username">Email hoặc MSSV</string>
+	<string name="auth_invalid_email_username">Email hoặc MSSV không hợp lệ</string>
+	<string name="auth_invalid_password">Mật khẩu quá ngắn</string>
+	<string name="auth_welcome_back">Chào mừng trở lại! Đăng nhập để truy cập các khóa học của bạn.</string>
+	<string name="auth_show_optional_fields">Hiển thị các trường tùy chọn</string>
+	<string name="auth_hide_optional_fields">Ẩn các trường tùy chọn</string>
+	<string name="auth_create_account">Tạo tài khoản</string>
+	<string name="auth_reset_password">Đặt lại mật khẩu</string>
+	<string name="auth_forgot_your_password">Quên mật khẩu</string>
+	<string name="auth_please_enter_your_log_in">Vui lòng nhập địa chỉ email đăng nhập hoặc khôi phục của bạn bên dưới và chúng tôi sẽ gửi cho bạn email kèm theo hướng dẫn.</string>
+	<string name="auth_check_your_email">Kiểm tra hộp thư điện tử của bạn</string>
+	<string name="auth_restore_password_success">Chúng tôi đã gửi hướng dẫn khôi phục mật khẩu tới email của bạn %s</string>
+	<string name="auth_enter_email_username">Nhập email hoặc MSSV</string>
+	<string name="auth_error_empty_username_email">Vui lòng nhập MSSV hoặc địa chỉ email của bạn và thử lại.</string>
+	<string name="auth_error_empty_email">Vui lòng nhập địa chỉ email của bạn và thử lại.</string>
+	<string name="auth_enter_password">Nhập mật khẩu</string>
+	<string name="auth_error_empty_password">Vui lòng nhập mật khẩu của bạn và thử lại.</string>
+	<string name="auth_create_new_account">Tạo một tài khoản để bắt đầu học ngay hôm nay!</string>
+	<string name="auth_google">Đăng nhập với Google</string>
+	<string name="auth_facebook">Đăng nhập với Facebook</string>
+	<string name="auth_microsoft">Đăng nhập với Microsoft</string>
+	<string name="auth_continue_google">Tiếp tục với Google</string>
+	<string name="auth_continue_facebook">Tiếp tục với Facebook</string>
+	<string name="auth_continue_microsoft">Tiếp tục với Microsoft</string>
+	<string name="auth_agreement_eula">Thỏa thuận cấp phép người dùng cuối</string>
+	<string name="auth_agreement_tos">Điều khoản dịch</string>
+	<string name="auth_agreement_privacy">Chính sách bảo mật</string>
+	<string name="auth_agreement_creating_account">Bằng cách tạo tài khoản, bạn đồng ý với %1$s và %2$s và bạn thừa nhận rằng %3$s và mỗi Thành viên sẽ xử lý dữ liệu cá nhân của bạn theo %4$s.</string>
+	<string name="auth_agreement_signin_in">Bằng cách đăng nhập vào ứng dụng này, bạn đồng ý với %1$s và %2$s , đồng thời bạn thừa nhận rằng %3$s và mỗi Thành viên xử lý dữ liệu cá nhân của bạn theo %4$s .</string>
+	<string name="auth_accessibility_show_password">Hiển thị mật khẩu</string>
+	<string name="auth_accessibility_hide_password">Ẩn mật khẩu</string>
+</resources>

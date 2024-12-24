@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dashboard_courses">Khóa học</string>
+	<string name="dashboard_you_are_not_enrolled">Bạn chưa ghi danh vào bất kỳ khóa học nào.</string>
+	<string name="dashboard_learn">Học tập</string>
+	<string name="dashboard_programs">Chương trình</string>
+	<string name="dashboard_course_date">Khóa học %1$s</string>
+	<string name="dashboard_start_course">Bắt đầu khóa học</string>
+	<string name="dashboard_resume_course">Tiếp tục khóa học</string>
+	<string name="dashboard_view_all_with_count">Xem tất cả các khóa học ( %1$d )</string>
+	<string name="dashboard_view_all">Xem tất cả</string>
+	<string name="dashboard_course_filter_all">Tất cả</string>
+	<string name="dashboard_course_filter_in_progress">Trong tiến trình</string>
+	<string name="dashboard_course_filter_completed">Hoàn thành</string>
+	<string name="dashboard_course_filter_expired">Hết hạn</string>
+	<string name="dashboard_all_courses">Tất cả các khóa học</string>
+	<string name="dashboard_all_courses_empty_title">Không có khóa học</string>
+	<string name="dashboard_all_courses_empty_description">Bạn hiện chưa ghi danh bất kỳ khóa học nào, bạn có muốn khám phá danh mục khóa học không\?</string>
+	<string name="dashboard_find_a_course">Tìm một khóa học</string>
+	<string name="dashboard_no_status_courses">Không có khóa học %1$s</string>
+	<string name="dashboard_pull_to_refresh">Vuốt xuống để làm mới</string>
+	<plurals name="dashboard_past_due_assignment">
+        <item quantity="other">%1$d Bài tập quá hạn</item>
+    </plurals>
+</resources>

@@ -18,14 +18,13 @@ import org.openedx.core.ui.theme.OpenEdXTheme
 fun SignInLogoView() {
     Box(
         modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight(0.2f),
+            .fillMaxWidth(),
         contentAlignment = Alignment.Center
     ) {
         Image(
             painter = painterResource(id = R.drawable.core_ic_logo),
             contentDescription = null,
-            modifier = Modifier.padding(top = 20.dp)
+            modifier = Modifier.padding(top = 40.dp)
         )
     }
 }

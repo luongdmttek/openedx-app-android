@@ -1,0 +1,9 @@
+<resources>
+    <string name="action_settings">Cài đặt</string>
+	<string name="next">Tiếp theo</string>
+	<string name="previous">Trước</string>
+	<string name="app_navigation_discovery">Khám phá</string>
+	<string name="app_navigation_learn">Học tập</string>
+	<string name="app_navigation_programs">Chương trình</string>
+	<string name="app_navigation_profile">Hồ sơ</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="discussion_discussions">Thảo luận</string>
+	<string name="discussion_all_posts">Tất cả những bài viết</string>
+	<string name="discussion_unread">Chưa đọc</string>
+	<string name="discussion_unanswered">Chưa được trả lời</string>
+	<string name="discussion_posts_following">Bài viết tôi đang theo dõi</string>
+	<string name="discussion_refine">Lọc:</string>
+	<string name="discussion_recent_activity">Hoạt động gần đây</string>
+	<string name="discussion_most_activity">Hoạt động nhiều nhất</string>
+	<string name="discussion_most_votes">Nhiều phiếu bầu nhất</string>
+	<string name="discussion_create_post">Tạo cuộc thảo luận</string>
+	<string name="discussion_create_question">Tạo câu hỏi</string>
+	<string name="discussion_add_response">Thêm phản hồi</string>
+	<string name="discussion_last_post">Bài cuối: %1$s</string>
+	<string name="discussion_follow">Theo dõi</string>
+	<string name="discussion_report">Báo cáo</string>
+	<string name="discussion_unreport">Hủy báo cáo</string>
+	<string name="discussion_add_comment">Thêm một bình luận</string>
+	<string name="discussion_comments_title">Bình luận</string>
+	<string name="discussion_comment_added">Đã thêm bình luận thành công</string>
+	<string name="discussion_discussion">Cuộc thảo luận</string>
+	<string name="discussion_question">Câu hỏi</string>
+	<string name="discussion_title">Tiêu đề</string>
+	<string name="discussion_follow_discussion">Theo dõi cuộc thảo luận này</string>
+	<string name="discussion_follow_question">Theo dõi câu hỏi này</string>
+	<string name="discussion_post_discussion">Đăng thảo luận</string>
+	<string name="discussion_post_question">Đăng câu hỏi</string>
+	<string name="discussion_general">Tổng quan</string>
+	<string name="discussion_search_all_posts">Tìm kiếm tất cả bài viết</string>
+	<string name="discussion_main_categories">Nhưng hạng mục chinh</string>
+	<string name="discussion_select_post_type">Chọn loại bài đăng</string>
+	<string name="discussion_topic">Chủ đề</string>
+	<string name="discussion_search_results">Kết quả tìm kiếm</string>
+	<string name="discussion_start_typing_to_find">Bắt đầu gõ để tìm chủ đề</string>
+	<string name="discussion_anonymous">vô danh</string>
+	<string name="discussion_no_yet">Chưa có cuộc thảo luận nào</string>
+	<string name="discussion_click_button_create_discussion">Nhấp vào nút bên dưới để tạo cuộc thảo luận đầu tiên của bạn.</string>
+	<string name="discussion_unnamed_subcategory">Danh mục con chưa được đặt tên</string>
+	<plurals name="discussion_votes">
+        <item quantity="other">%1$d phiếu bầu</item>
+    </plurals>
+	<plurals name="discussion_comments">
+        <item quantity="other">%1$d Bình luận</item>
+    </plurals>
+	<plurals name="discussion_missed_posts">
+        <item quantity="other">%1$d Bài viết bị bỏ lỡ</item>
+    </plurals>
+	<plurals name="discussion_responses">
+        <item quantity="other">%1$d phản hồi</item>
+    </plurals>
+	<plurals name="discussion_responses_capitalized">
+        <item quantity="other">%1$d Phản hồi</item>
+    </plurals>
+	<plurals name="discussion_found_threads">
+        <item quantity="other">Tìm thấy %s bài viết</item>
+    </plurals>    
+</resources>

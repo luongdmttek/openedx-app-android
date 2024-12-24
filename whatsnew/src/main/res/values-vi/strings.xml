@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="whats_new_title">Có gì mới</string>
+	<string name="whats_new_navigation_previous">Trước</string>
+	<string name="whats_new_navigation_next">Tiếp theo</string>
+	<string name="whats_new_navigation_done">Xong</string>    
+</resources>

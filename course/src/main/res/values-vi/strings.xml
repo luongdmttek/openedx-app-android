@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="course_outline">Tom tăt nội dung chương trinh</string>
+	<string name="course_content">Nội dung khóa học</string>
+	<string name="course_units">Đơn vị khóa học</string>
+	<string name="course_subsections">Tiểu mục khóa học</string>
+	<string name="course_videos">Video</string>
+	<string name="course_you_earned_certificate">Xin chúc mừng, bạn đã đạt được chứng chỉ khóa học này trong &amp;quot; %s &amp;quot;.</string>
+	<string name="course_view_certificate">Xem chứng chỉ</string>
+	<string name="course_navigation_prev">Trước đó</string>
+	<string name="course_navigation_prev_unit">Đơn vị trước đó</string>
+	<string name="course_navigation_next">Tiếp theo</string>
+	<string name="course_navigation_next_unit">Đơn vị tiếp theo</string>
+	<string name="course_navigation_finish">Hoàn thành</string>
+	<string name="course_resume_unit_title">Đơn vị cuối cùng:</string>
+	<string name="course_resume_unit_btn">Bản tóm tắt</string>
+	<string name="course_discussion">Cuộc thảo luận</string>
+	<string name="course_handouts">Tài liệu phát tay</string>
+	<string name="course_announcements">Thông báo</string>
+	<string name="course_find_important_info">Tìm thông tin khóa học quan trọng</string>
+	<string name="course_latest_news">Theo kịp với những tin tức mới nhất</string>
+	<string name="course_good_job">Làm tốt lắm!</string>
+	<string name="course_section_finished">Bạn đã hoàn thành &amp;quot; %s &amp;quot;.</string>
+	<string name="course_back_to_outline">Quay lại phác thảo</string>
+	<string name="course_next_section">Phần tiếp theo</string>
+	<string name="course_not_started">Khóa học này vẫn chưa bắt đầu.</string>
+	<string name="course_not_connected_to_internet">Bạn không kết nối với Internet. Xin vui lòng kiểm tra kết nối Internet của bạn.</string>
+	<string name="course_can_download_only_with_wifi">Bạn chỉ có thể tải xuống nội dung từ Wi-fi</string>
+	<string name="course_this_interactive_component">Thành phần tương tác này hiện chưa có sẵn</string>
+	<string name="course_explore_other_parts_on_web">Khám phá các phần khác của khóa học này hoặc xem trên web.</string>
+	<string name="course_open_in_browser">Mở trong trình duyệt</string>
+	<string name="course_subtitles">phụ đề</string>
+	<string name="course_continue_with">Tiếp tục với:</string>
+	<string name="course_resume">Bản tóm tắt</string>
+	<string name="course_to_proceed">Để tiếp tục với &amp;quot; %s &amp;quot; nhấn &amp;quot;Phần tiếp theo&amp;quot;.</string>
+	<string name="course_gated_content_label">Một số nội dung trong phần này của khóa học chỉ dành cho người dùng đã nâng cấp.</string>
+	<string name="course_change_quality_when_downloading">Bạn không thể thay đổi chất lượng video tải xuống khi tất cả video đang tải xuống</string>
+	<string name="course_dates_shifted_message">Ngày đã thay đổi</string>
+	<string name="course_dates_unavailable_message">Hiện tại chưa có ngày khai giảng khóa học.</string>
+	<string name="course_container_nav_home">Trang chủ</string>
+	<string name="course_container_nav_videos">Video</string>
+	<string name="course_container_nav_discussions">Thảo luận</string>
+	<string name="course_container_nav_more">Thêm ...</string>
+	<string name="course_container_nav_dates">Ngày</string>
+	<string name="course_container_nav_downloads">Tải xuống</string>
+	<!-- Accessibility -->
+	<string name="course_accessibility_video_player">Trình phát video</string>
+	<string name="course_accessibility_remove_course_section">Xóa phần khóa học</string>
+	<string name="course_accessibility_download_course_section">Tải xuống phần khóa học</string>
+	<string name="course_accessibility_stop_downloading_course_section">Dừng tải xuống phần khóa học</string>
+	<string name="course_accessibility_section_completed">Phần đã hoàn thành</string>
+	<string name="course_accessibility_section_uncompleted">Phần chưa hoàn thành</string>
+	<string name="course_download_queue_title">Tải xuống</string>
+	<string name="course_download_untitled">(Không có tiêu đề)</string>
+	<string name="course_download_big_files_confirmation_title">Tải xuống</string>
+	<string name="course_download_big_files_confirmation_text">Các video bạn đã chọn lớn hơn 1 GB. Bạn có muốn tải xuống những video này không\?</string>
+	<string name="course_delete_while_downloading_confirmation_text" formatted="false">Tắt công tắc sẽ ngừng tải xuống và xóa tất cả video đã tải xuống cho &amp;quot; %s &amp;quot;\?</string>
+	<string name="course_delete_downloads_confirmation_text" formatted="false">Bạn có chắc chắn muốn xóa tất cả video của &amp;quot; %s &amp;quot; không\?</string>
+	<string name="course_delete_download_confirmation_text" formatted="false">Bạn có chắc chắn muốn xóa (các) video của &amp;quot; %s &amp;quot; không\?</string>
+	<string name="course_download_no_internet_dialog_description">Tải xuống nội dung này yêu cầu kết nối internet đang hoạt động. Vui lòng kết nối internet và thử lại.</string>
+	<string name="course_wifi_required">Yêu cầu có Wi-Fi</string>
+	<string name="course_download_wifi_required_dialog_description">Tải xuống nội dung này yêu cầu kết nối WiFi đang hoạt động. Vui lòng kết nối với mạng WiFi và thử lại.</string>
+	<string name="course_download_failed">Tải xuống không thành công</string>
+	<string name="course_download_failed_dialog_description">Thật không may, nội dung này không tải xuống được. Vui lòng thử lại sau hoặc báo cáo sự cố này.</string>
+	<string name="course_download_confirm_dialog_description">Tải xuống nội dung %1$s này sẽ lưu các khối có sẵn ngoại tuyến.</string>
+	<string name="course_download_on_cellural">Tải xuống trên di động\?</string>
+	<string name="course_download_on_cellural_dialog_description">Tải xuống nội dung này sẽ sử dụng %1$s dữ liệu di động.</string>
+	<string name="course_download_remove_offline_content">Xóa nội dung ngoại tuyến\?</string>
+	<string name="course_download_remove_dialog_description">Xóa nội dung này sẽ giải phóng %1$s .</string>
+	<string name="course_download">Tải về</string>
+	<string name="course_remove">Di dời</string>
+	<string name="course_device_storage_full">Thiết bị lưu trữ đầy đủ</string>
+	<string name="course_download_device_storage_full_dialog_description">Thiết bị của bạn không đủ dung lượng trống để tải xuống nội dung này. Vui lòng giải phóng một ít dung lượng và thử lại.</string>
+	<string name="course_used_free_storage">%1$s đã sử dụng, %2$s miễn phí</string>
+	<string name="course_0mb">0MB</string>
+	<string name="course_available_to_download">Có sẵn để tải xuống</string>
+	<string name="course_no_available_to_download_offline">Hiện tại không có nội dung nào của khóa học này có thể tải xuống ngoại tuyến.</string>
+	<string name="course_download_all">Tải xuống tất cả</string>
+	<string name="course_downloaded">Đã tải xuống</string>
+	<string name="course_ready_to_download">Sẵn sàng để tải xuống</string>
+	<string name="course_you_can_download_course_content_offline">Bạn có thể tải xuống nội dung khóa học ngoại tuyến để học khi đang di chuyển, mà không cần kết nối internet hoặc sử dụng dữ liệu di động.</string>
+	<string name="course_downloading">Đang tải xuống</string>
+	<string name="course_largest_downloads">Tải xuống nhiều nhất</string>
+	<string name="course_remove_all_downloads">Xóa tất cả các mục tải xuống</string>
+	<string name="course_cancel_course_download">Hủy khóa học Tải xuống</string>
+	<string name="course_not_available_offline">Thành phần này hiện chưa có sẵn ngoại tuyến</string>
+	<string name="course_explore_other_parts_when_reconnect">Khám phá các phần khác của khóa học này hoặc xem phần này khi bạn kết nối lại.</string>
+	<string name="course_not_downloaded">Thành phần này không được tải xuống</string>
+	<string name="course_explore_other_parts_when_reconnect_or_download">Khám phá các phần khác của khóa học này hoặc tải xuống khi bạn kết nối lại.</string>
+	<string name="course_label_back">Quay lại</string>
+	<string name="course_error_expired_not_upgradeable_title">Quyền truy cập kiểm tra miễn phí của bạn vào khóa học này đã hết hạn vào %s.</string>
+	<string name="course_find_new_course_button">Tìm một khóa học mới</string>
+	<string name="course_error_not_started_title">Khóa học này sẽ bắt đầu vào %s. Hãy quay lại để bắt đầu học nhé!</string>
+	<string name="course_an_error_occurred">Đã xảy ra lỗi khi tải khóa học của bạn</string>
+
+</resources>

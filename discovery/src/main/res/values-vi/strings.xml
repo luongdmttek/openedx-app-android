@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="discovery_Discovery">Khám phá</string>
+	<string name="discovery_discovery_new">Khám phá mới</string>
+	<string name="discovery_lets_find">Hãy tìm điều gì đó mới mẻ cho bạn</string>
+	<string name="discovery_search_results">Kết quả tìm kiếm</string>
+	<string name="discovery_start_typing_to_find">Bắt đầu nhập để tìm khóa học</string>
+	<string name="discovery_explore_the_catalog">Khám phá danh mục</string>
+	<string name="discovery_course_details">Chi tiết khóa học</string>
+	<string name="discovery_enroll_now">Ghi danh ngay bây giờ</string>
+	<string name="discovery_view_course">Xem khóa học</string>
+	<string name="discovery_you_cant_enroll">Bạn không thể ghi danh khóa học này vì ngày ghi danh đã hết.</string>
+	<string name="discovery_no_internet_label">Để ghi danh khóa học này, vui lòng đảm bảo bạn đã kết nối với internet.</string>
+	<string name="discovery_enrolled_successfully">Bạn đã ghi danh thành công khóa học này.</string>
+	<string name="discovery_you_are_already_enrolled">Bạn đã ghi danh khóa học này.</string>
+	<plurals name="discovery_found_courses">
+        <item quantity="other">Đã tìm thấy các khóa học %s theo yêu cầu của bạn</item>
+    </plurals>
+	<!-- Accessibility -->
+	<string name="discovery_programs">Chương trình</string>
+	<string name="discovery_accessibility_play_video">Phát video</string>
+
+</resources>
