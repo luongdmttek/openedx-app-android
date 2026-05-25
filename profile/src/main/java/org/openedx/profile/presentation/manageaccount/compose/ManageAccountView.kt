@@ -179,16 +179,6 @@ internal fun ManageAccountView(
                                         textColor = MaterialTheme.appColors.textAccent
                                     )
                                     Spacer(modifier = Modifier.height(12.dp))
-                                    IconText(
-                                        text = stringResource(id = ProfileR.string.profile_delete_profile),
-                                        painter = painterResource(id = ProfileR.drawable.profile_ic_trash),
-                                        textStyle = MaterialTheme.appTypography.labelLarge,
-                                        color = MaterialTheme.appColors.error,
-                                        onClick = {
-                                            onAction(ManageAccountViewAction.DeleteAccount)
-                                        }
-                                    )
-                                    Spacer(modifier = Modifier.height(12.dp))
                                 }
                             }
                         }

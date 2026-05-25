@@ -1,6 +1,7 @@
 package org.openedx.course.presentation.unit.html
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
 import android.content.res.Configuration
 import android.graphics.Bitmap
@@ -10,12 +11,16 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.webkit.JavascriptInterface
+import android.webkit.ValueCallback
+import android.webkit.WebChromeClient
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
@@ -261,6 +266,45 @@ private fun HTMLContentView(
     val coroutineScope = rememberCoroutineScope()
     val context = LocalContext.current
 
+    var filePathCallback by remember {
+        mutableStateOf<ValueCallback<Array<Uri>>?>(null)
+    }
+
+    val fileChooserLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    )
+    { result ->
+        val callback = filePathCallback
+            ?: return@rememberLauncherForActivityResult
+
+        if (result.resultCode != Activity.RESULT_OK) {
+            callback.onReceiveValue(null)
+            filePathCallback = null
+            return@rememberLauncherForActivityResult
+        }
+
+        val uriList = mutableListOf<Uri>()
+        result.data?.data?.let {
+            uriList.add(it)
+        }
+        result.data?.clipData?.let { clipData ->
+            for (i in 0 until clipData.itemCount) {
+                clipData.getItemAt(i).uri?.let {
+                    uriList.add(it)
+                }
+            }
+        }
+
+        val uris =
+            if (uriList.isNotEmpty()) {
+                uriList.toTypedArray()
+            } else {
+                null
+            }
+        callback.onReceiveValue(uris)
+        filePathCallback = null
+    }
+
     val screenWidth by remember(key1 = windowSize) {
         mutableStateOf(
             windowSize.windowSizeValue(
@@ -376,6 +420,27 @@ private fun HTMLContentView(
                 }
                 isVerticalScrollBarEnabled = false
                 isHorizontalScrollBarEnabled = false
+
+                webChromeClient = object : WebChromeClient() {
+                    override fun onShowFileChooser(
+                        webView: WebView?,
+                        filePath: ValueCallback<Array<Uri>>,
+                        params: FileChooserParams
+                    ): Boolean {
+                        filePathCallback?.onReceiveValue(null)
+                        filePathCallback = filePath
+                        return try {
+                            fileChooserLauncher.launch(
+                                params.createIntent()
+                            )
+                            true
+                        } catch (e: Exception) {
+                            filePathCallback?.onReceiveValue(null)
+                            filePathCallback = null
+                            false
+                        }
+                    }
+                }
 
                 loadUrl(url, coroutineScope, cookieManager)
                 applyDarkModeIfEnabled(isDarkTheme)

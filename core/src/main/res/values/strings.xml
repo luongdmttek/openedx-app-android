@@ -8,8 +8,8 @@
     <string name="core_error_try_again">Try again</string>
     <string name="core_privacy_policy">Privacy Policy</string>
     <string name="core_cookie_policy" translatable="false">Cookie policy</string>
-    <string name="core_data_sell" translatable="false">Do not sell my personal information</string>
-    <string name="core_faq" translatable="false">View FAQ</string>
+    <string name="core_data_sell">Do not sell my personal information</string>
+    <string name="core_faq">View FAQ</string>
     <string name="core_terms_of_use">Terms of Use</string>
     <string name="core_profile">Profile</string>
     <string name="core_cancel">Cancel</string>
@@ -40,10 +40,10 @@
     <string name="core_user_not_active">User account is not activated. Please activate your account first.</string>
     <string name="core_email_chooser_header">Send email using…</string>
     <string name="core_email_client_not_present">No e-mail clients installed</string>
-    <string name="core_app_version" translatable="false">App version: </string>
-    <string name="core_android_os_version" translatable="false">OS version: </string>
+    <string name="core_app_version">App version: </string>
+    <string name="core_android_os_version">OS version: </string>
     <string name="core_android_device_model" translatable="false">Device model: </string>
-    <string name="core_email_subject" translatable="false">Feedback</string>
+    <string name="core_email_subject">Feedback</string>
     <string name="core_date_format_MMM_dd_yyyy">MMM dd, yyyy</string>
     <string name="core_full_date_with_time">dd MMM yyyy hh:mm aaa</string>
     <string name="core_app_upgrade_title">App Update</string>

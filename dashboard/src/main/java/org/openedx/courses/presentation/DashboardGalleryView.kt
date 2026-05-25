@@ -21,7 +21,9 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyHorizontalGrid
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Card
@@ -275,13 +277,13 @@ private fun DashboardGalleryView(
                             modifier = Modifier
                                 .align(Alignment.Center)
                         )
-                        FindACourseButton(
-                            modifier = Modifier
-                                .align(Alignment.BottomCenter),
-                            findACourseClick = {
-                                onAction(DashboardGalleryScreenAction.NavigateToDiscovery)
-                            }
-                        )
+//                        FindACourseButton(
+//                            modifier = Modifier
+//                                .align(Alignment.BottomCenter),
+//                            findACourseClick = {
+//                                onAction(DashboardGalleryScreenAction.NavigateToDiscovery)
+//                            }
+//                        )
                     }
                 }
 
@@ -365,9 +367,16 @@ private fun SecondaryCourses(
     } else {
         MOBILE_COURSE_LIST_ITEM_COUNT
     }
-    val rows = if (windowSize.isTablet) 2 else 1
+    val columns = if (windowSize.isTablet) 3 else 2
     val height = if (windowSize.isTablet) 322.dp else 152.dp
     val items = courses.take(itemsCount)
+    val scrollState = rememberLazyGridState()
+
+    val itemSpacing = 8
+    val rows = (items.size + columns - 1) / columns
+    // Calculate the height of the grid based on item height and vertical spacing
+    val itemHeight = 150
+    val gridHeight = (rows * itemHeight) + ((rows - 1) * itemSpacing)
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -383,12 +392,15 @@ private fun SecondaryCourses(
             iconModifier = Modifier.size(22.dp),
             onClick = onViewAllClick
         )
-        LazyHorizontalGrid(
+        LazyVerticalGrid(
             modifier = Modifier
                 .fillMaxSize()
-                .height(height),
-            rows = GridCells.Fixed(rows),
-            contentPadding = contentPadding,
+                .height(gridHeight.dp),
+            state = scrollState,
+            columns = GridCells.Fixed(columns),
+            contentPadding = PaddingValues(horizontal = 18.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
             content = {
                 items(items) {
                     CourseListItem(
