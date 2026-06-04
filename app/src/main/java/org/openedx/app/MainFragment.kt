@@ -100,7 +100,6 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
         return mutableListOf<Pair<Int, () -> Fragment>>().apply {
             add(R.id.fragmentLearn to learnFragmentFactory)
-            add(R.id.fragmentDiscover to { viewModel.getDiscoveryFragment })
             if (viewModel.isDownloadsFragmentEnabled) {
                 add(R.id.fragmentDownloads to { DownloadsFragment() })
             }

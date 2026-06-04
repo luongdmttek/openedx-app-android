@@ -161,7 +161,7 @@ class DashboardGalleryViewModel(
     }
 
     companion object {
-        private const val PAGE_SIZE_TABLET = 7
-        private const val PAGE_SIZE_PHONE = 5
+        private const val PAGE_SIZE_TABLET = 40
+        private const val PAGE_SIZE_PHONE = 30
     }
 }

@@ -522,15 +522,15 @@ private fun DashboardPager(
                 )
             }
 
-            CourseContainerTab.OFFLINE -> {
-                CourseOfflineScreen(
-                    windowSize = windowSize,
-                    viewModel = koinViewModel(
-                        parameters = { parametersOf(viewModel.courseId, viewModel.courseName) }
-                    ),
-                    fragmentManager = fragmentManager,
-                )
-            }
+//            CourseContainerTab.OFFLINE -> {
+//                CourseOfflineScreen(
+//                    windowSize = windowSize,
+//                    viewModel = koinViewModel(
+//                        parameters = { parametersOf(viewModel.courseId, viewModel.courseName) }
+//                    ),
+//                    fragmentManager = fragmentManager,
+//                )
+//            }
 
             CourseContainerTab.DISCUSSIONS -> {
                 DiscussionTopicsScreen(

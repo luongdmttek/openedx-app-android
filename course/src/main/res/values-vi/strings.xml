@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="course_you_earned_certificate">Xin chúc mừng, bạn đã đạt được chứng chỉ khóa học này trong &amp;quot; %s &amp;quot;.</string>
+    <string name="course_view_certificate">Xem chứng chỉ</string>
+    <string name="course_navigation_prev">Trước đó</string>
+    <string name="course_navigation_next">Tiếp theo</string>
+    <string name="course_navigation_finish">Hoàn thành</string>
+    <string name="course_handouts">Tài liệu phát tay</string>
+    <string name="course_announcements">Thông báo</string>
+    <string name="course_find_important_info">Tìm thông tin khóa học quan trọng</string>
+    <string name="course_latest_news">Theo kịp với những tin tức mới nhất</string>
+    <string name="course_good_job">Làm tốt lắm!</string>
+    <string name="course_section_finished">Bạn đã hoàn thành &amp;quot; %s &amp;quot;.</string>
+    <string name="course_back_to_outline">Quay lại phác thảo</string>
+    <string name="course_next_section">Phần tiếp theo</string>
+    <string name="course_not_started">Khóa học này vẫn chưa bắt đầu.</string>
+    <string name="course_can_download_only_with_wifi">Bạn chỉ có thể tải xuống nội dung từ Wi-fi</string>
+    <string name="course_this_interactive_component">Thành phần tương tác này hiện chưa có sẵn</string>
+    <string name="course_explore_other_parts_on_web">Khám phá các phần khác của khóa học này hoặc xem trên web.</string>
+    <string name="course_open_in_browser">Mở trong trình duyệt</string>
+    <string name="course_subtitles">phụ đề</string>
+    <string name="course_to_proceed">Để tiếp tục với &amp;quot; %s &amp;quot; nhấn &amp;quot;Phần tiếp theo&amp;quot;.</string>
+    <string name="course_gated_content_label">Một số nội dung trong phần này của khóa học chỉ dành cho người dùng đã nâng cấp.</string>
+    <string name="course_change_quality_when_downloading">Bạn không thể thay đổi chất lượng video tải xuống khi tất cả video đang tải xuống</string>
+    <string name="course_dates_shifted_message">Ngày đã thay đổi</string>
+    <string name="course_progress_completion_title">Hoàn thành khóa học</string>
+    <string name="course_progress_completion_description">Số liệu này thể hiện lượng nội dung khóa học bạn đã hoàn thành. Lưu ý rằng một số nội dung có thể chưa được phát hành.</string>
+    <string name="course_progress_overall_title">Điểm tổng thể</string>
+    <string name="course_progress_overall_description">Điểm này thể hiện điểm số của bạn so với điểm cần thiết để vượt qua khóa học này.</string>
+    <string name="course_progress_current_overall">Điểm tổng thể hiện tại:</string>
+    <string name="course_progress_required_grade_percent">Điểm có trọng số là %1$s%% là bắt buộc để vượt qua khóa học này</string>
+    <string name="course_progress_grade_details">Chi tiết lớp</string>
+    <string name="course_progress_assignment_type">Loại bài tập</string>
+    <string name="course_progress_current_max">Hiện tại / Tối đa %</string>
+
+    <string name="course_container_nav_home">Trang chủ</string>
+    <string name="course_container_nav_content">Nội dung</string>
+    <string name="course_container_nav_discussions">Thảo luận</string>
+    <string name="course_container_nav_more">Thêm ...</string>
+    <string name="course_container_nav_dates">Ngày</string>
+    <string name="course_container_nav_downloads">Tải xuống</string>
+    <string name="course_container_nav_progress">Tiến trình</string>
+
+    <string name="course_container_content_tab_all">Tất cả</string>
+    <string name="course_container_content_tab_video">Videos</string>
+    <string name="course_container_content_tab_assignment">Bài tập</string>
+
+    <!-- Course Completion UI -->
+    <string name="course_completion_title">Hoàn thành khóa học</string>
+    <string name="course_completion_progress_label">Tiến trình</string>
+    <string name="course_completion_progress_description">Bạn đã hoàn thành %1$s%% nội dung khóa học</string>
+    <string name="course_completion_completed">Hoàn thành</string>
+    <string name="course_completion_next_sequence">Chuỗi tiếp theo</string>
+    <string name="course_completion_view_all_content">Xem tất cả nội dung</string>
+
+    <!-- Accessibility -->
+    <string name="course_accessibility_video_player">Trình phát video</string>
+    <string name="course_accessibility_remove_course_section">Xóa phần khóa học</string>
+    <string name="course_accessibility_download_course_section">Tải xuống phần khóa học</string>
+    <string name="course_accessibility_stop_downloading_course_section">Dừng tải xuống phần khóa học</string>
+    <string name="course_accessibility_section_completed">Phần đã hoàn thành</string>
+    <string name="course_accessibility_section_uncompleted">Phần chưa hoàn thành</string>
+    <string name="course_accessibility_video_watched">Video đã xem</string>
+    <string name="course_accessibility_assignment_completed">Bài tập đã hoàn thành</string>
+    <string name="course_accessibility_assignment_due_date_past">Ngày đến hạn nộp bài tập đã qua</string>
+
+    <plurals name="course_sections_complete" tools:ignore="MissingTranslation">
+        <item quantity="one">%1$s/%2$s Phần đã hoàn thành</item>
+        <item quantity="other">%1$s/%2$s Phần đã hoàn thành</item>
+    </plurals>
+    
+    <string name="course_label_back">Quay lại</string>
+    <string name="course_error_expired_not_upgradeable_title">Quyền truy cập kiểm tra miễn phí của bạn vào khóa học này đã hết hạn vào %s.</string>
+    <string name="course_error_not_started_title">Khóa học này sẽ bắt đầu vào %s. Hãy quay lại để bắt đầu học nhé!</string>
+    <string name="course_an_error_occurred">Đã xảy ra lỗi khi tải khóa học của bạn</string>
+    <string name="course_continue">Tiếp tục</string>
+    <string name="course_view_completed">Xem Đã hoàn thành</string>
+    <string name="course_hide_completed">Ẩn Đã hoàn thành</string>
+    <string name="course_completed">Hoàn thành</string>
+    <string name="course_progress_earned_possible_assignment_problems">%1$s / %2$s Hoàn thành</string>
+    <string name="course_progress_of_grade">của Lớp</string>
+    <string name="course_progress_current_and_max_weighted_graded_percent">%1$s / %2$s%%</string>
+    <string name="course_progress_no_assignments">Khóa học này không có bài tập được chấm điểm.</string>
+    <string name="course_video_watched">%1$s/%2$s Đã xem</string>
+    <string name="course_completed_of">%1$s/%2$s Đã hoàn thành</string>
+    <string name="course_complete_points">Hoàn thành - %1$s điểm</string>
+    <string name="course_past_due">Quá hạn - %1$s điểm</string>
+    <string name="course_in_progress">- %1$s điểm</string>
+    <string name="course_of_grade">%1$s %% của Điểm</string>
+    <string name="course_review_grading_policy">Xem lại Chính sách chấm điểm khóa học</string>
+    <string name="course_return_to_course_home">Trở về Trang chủ Khóa học</string>
+
+    <!-- Videos UI -->
+    <string name="course_continue_watching">Tiếp tục xem</string>
+    <string name="course_next_video">Video tiếp theo</string>
+    <string name="course_view_all_videos">Xem tất cả video</string>
+    <string name="course_video_time_remaining">%1$s còn lại</string>
+    <string name="course_videos_completed">Video\nđã hoàn thành</string>
+
+    <!-- Assignments UI -->
+    <string name="course_assignments_completed">Bài tập \nđã hoàn thành</string>
+    <string name="course_view_all_assignments">Xem tất cả bài tập</string>
+    <string name="course_next_assignment">Bài tập tiếp theo</string>
+    <string name="course_due_today">Ngày đến hạn: %1$s</string>
+    <string name="course_days_past_due">%1$d Ngày quá hạn: %2$s</string>
+    <string name="course_due_in_days">%1$d Ngày quá hạn: %2$s</string>
+    <string name="course_section">Phần: %1$s</string>
+
+    <!-- Grades UI -->
+    <string name="course_grades_title">Điểm số</string>
+    <string name="course_grades_description">Điểm này thể hiện điểm số của bạn so với điểm cần thiết để vượt qua khóa học này.</string>
+    <string name="course_view_progress">Xem tiến trình</string>
+
+    <!-- Caught Up Messages -->
+    <string name="course_videos_caught_up">Các bạn đã xem hết video rồi!</string>
+    <string name="course_assignments_caught_up">Các bạn đã hoàn thành xong bài tập rồi!</string>
+</resources>

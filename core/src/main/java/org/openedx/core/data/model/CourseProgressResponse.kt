@@ -93,22 +93,24 @@ data class CourseProgressResponse(
         @SerializedName("assignment_colors") val assignmentColors: List<String>?
     ) {
         // TODO Temporary solution. Backend will returns color list later
-        val defaultColors = listOf(
-            "#D24242",
-            "#7B9645",
-            "#5A5AD8",
-            "#B0842C",
-            "#2E90C2",
-            "#D13F88",
-            "#36A17D",
-            "#AE5AD8",
-            "#3BA03B"
-        )
+        companion object {
+            val DEFAULT_COLORS = listOf(
+                "#D24242",
+                "#7B9645",
+                "#5A5AD8",
+                "#B0842C",
+                "#2E90C2",
+                "#D13F88",
+                "#36A17D",
+                "#AE5AD8",
+                "#3BA03B"
+            )
+        }
 
         fun mapToRoomEntity() = GradingPolicyDb(
             assignmentPolicies = assignmentPolicies?.map { it.mapToRoomEntity() } ?: emptyList(),
             gradeRange = gradeRange ?: emptyMap(),
-            assignmentColors = assignmentColors ?: defaultColors
+            assignmentColors = assignmentColors ?: DEFAULT_COLORS
         )
 
         fun mapToDomain() = CourseProgress.GradingPolicy(
@@ -116,7 +118,7 @@ data class CourseProgressResponse(
             gradeRange = gradeRange ?: emptyMap(),
             assignmentColors = assignmentColors?.map { colorString ->
                 Color(colorString.toColorInt())
-            } ?: defaultColors.map { Color(it.toColorInt()) }
+            } ?: DEFAULT_COLORS.map { Color(it.toColorInt()) }
         )
 
         data class AssignmentPolicy(
@@ -163,7 +165,7 @@ data class CourseProgressResponse(
             @SerializedName("block_key") val blockKey: String?,
             @SerializedName("display_name") val displayName: String?,
             @SerializedName("has_graded_assignment") val hasGradedAssignment: Boolean?,
-            @SerializedName("override") val override: String?,
+            @SerializedName("override") val override: Any?,
             @SerializedName("learner_has_access") val learnerHasAccess: Boolean?,
             @SerializedName("num_points_earned") val numPointsEarned: Float?,
             @SerializedName("num_points_possible") val numPointsPossible: Float?,
@@ -178,7 +180,7 @@ data class CourseProgressResponse(
                 blockKey = blockKey.orEmpty(),
                 displayName = displayName.orEmpty(),
                 hasGradedAssignment = hasGradedAssignment ?: false,
-                override = override.orEmpty(),
+                override = override?.toString().orEmpty(),
                 learnerHasAccess = learnerHasAccess ?: false,
                 numPointsEarned = numPointsEarned ?: 0f,
                 numPointsPossible = numPointsPossible ?: 0f,
@@ -194,7 +196,7 @@ data class CourseProgressResponse(
                 blockKey = blockKey ?: "",
                 displayName = displayName ?: "",
                 hasGradedAssignment = hasGradedAssignment ?: false,
-                override = override ?: "",
+                override = override?.toString() ?: "",
                 learnerHasAccess = learnerHasAccess ?: false,
                 numPointsEarned = numPointsEarned ?: 0f,
                 numPointsPossible = numPointsPossible ?: 0f,

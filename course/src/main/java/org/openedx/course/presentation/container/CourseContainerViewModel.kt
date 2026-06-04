@@ -288,9 +288,9 @@ class CourseContainerViewModel(
                 updateData()
             }
 
-            CourseContainerTab.OFFLINE -> {
-                updateData()
-            }
+//            CourseContainerTab.OFFLINE -> {
+//                updateData()
+//            }
 
             CourseContainerTab.DATES -> {
                 viewModelScope.launch {
@@ -336,7 +336,7 @@ class CourseContainerViewModel(
             CourseContainerTab.DATES -> datesTabClickedEvent()
             CourseContainerTab.PROGRESS -> progressTabClickedEvent()
             CourseContainerTab.MORE -> moreTabClickedEvent()
-            CourseContainerTab.OFFLINE -> offlineTabClickedEvent()
+//            CourseContainerTab.OFFLINE -> offlineTabClickedEvent()
             CourseContainerTab.CONTENT -> contentTabClickedEvent()
         }
     }
