@@ -32,6 +32,7 @@
     <string name="profile_support_info">Support</string>
     <string name="profile_video">Video</string>
     <string name="profile_dates_and_calendar">Dates &amp; Calendar</string>
+    <string name="profile_language">Languages</string>
     <string name="profile_wifi_only_download">Wi-fi only download</string>
     <string name="profile_only_download_when_wifi_turned_on">Only download content when wi-fi is turned on</string>
     <string name="profile_calendar_sync">Calendar Sync</string>

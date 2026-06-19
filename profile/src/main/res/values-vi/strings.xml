@@ -32,6 +32,7 @@
     <string name="profile_support_info">Hỗ trợ</string>
     <string name="profile_video">Video</string>
     <string name="profile_dates_and_calendar">Ngày &amp; Lịch</string>
+    <string name="profile_language">Ngôn ngữ</string>
     <string name="profile_wifi_only_download">Chỉ tải xuống khi dùng Wi-Fi</string>
     <string name="profile_only_download_when_wifi_turned_on">Chỉ tải xuống nội dung khi bật Wi-Fi</string>
     <string name="profile_calendar_sync">Đồng bộ hóa lịch</string>

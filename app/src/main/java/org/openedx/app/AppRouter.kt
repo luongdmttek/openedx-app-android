@@ -419,6 +419,10 @@ class AppRouter :
         replaceFragmentWithBackStack(fm, VideoQualityFragment.newInstance(videoQualityType.name))
     }
 
+    override fun navigateToLanguageSelector(fm: FragmentManager) {
+//        replaceFragmentWithBackStack(fm, LanguageSelectFragment())
+    }
+
     override fun navigateToDiscover(fm: FragmentManager) {
         fm.beginTransaction()
             .replace(R.id.container, MainFragment.newInstance("", "", HomeTab.DISCOVER.name))

@@ -187,6 +187,10 @@ class SettingsViewModel(
         calendarRouter.navigateToCalendarSettings(fragmentManager)
     }
 
+    fun languageSelectorClicked(fragmentManager: FragmentManager) {
+        profileRouter.navigateToLanguageSelector(fragmentManager)
+    }
+
     fun restartApp(fragmentManager: FragmentManager) {
         profileRouter.restartApp(
             fragmentManager,
