@@ -92,6 +92,12 @@ class SettingsFragment : Fragment() {
                                     requireActivity().supportFragmentManager
                                 )
                             }
+
+                            SettingsScreenAction.LanguageSelectorClick -> {
+                                viewModel.languageSelectorClicked(
+                                    requireActivity().supportFragmentManager
+                                )
+                            }
                         }
                     }
                 )
@@ -118,4 +124,5 @@ internal interface SettingsScreenAction {
     object VideoSettingsClick : SettingsScreenAction
     object ManageAccountClick : SettingsScreenAction
     object CalendarSettingsClick : SettingsScreenAction
+    object LanguageSelectorClick : SettingsScreenAction
 }

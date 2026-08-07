@@ -181,6 +181,9 @@ internal fun SettingsScreen(
                                         },
                                         onCalendarSettingsClick = {
                                             onAction(SettingsScreenAction.CalendarSettingsClick)
+                                        },
+                                        onLanguageSelectorClick = {
+                                            onAction(SettingsScreenAction.LanguageSelectorClick)
                                         }
                                     )
 
@@ -211,7 +214,8 @@ internal fun SettingsScreen(
 @Composable
 private fun SettingsSection(
     onVideoSettingsClick: () -> Unit,
-    onCalendarSettingsClick: () -> Unit
+    onCalendarSettingsClick: () -> Unit,
+    onLanguageSelectorClick: () -> Unit
 ) {
     Column {
         Text(
@@ -236,6 +240,11 @@ private fun SettingsSection(
                 SettingsItem(
                     text = stringResource(id = profileR.string.profile_dates_and_calendar),
                     onClick = onCalendarSettingsClick
+                )
+                SettingsDivider()
+                SettingsItem(
+                    text = stringResource(id = profileR.string.profile_language),
+                    onClick = onLanguageSelectorClick
                 )
             }
         }
