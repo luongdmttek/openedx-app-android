@@ -128,6 +128,9 @@
     <string name="core_video_downloaded_subtitle" formatted="false">Videos %d, %s Total</string>
     <string name="core_video_streaming_quality">Video streaming quality</string>
     <string name="core_video_download_quality">Video download quality</string>
+    <string name="core_language">Language</string>
+    <string name="core_language_english">English</string>
+    <string name="core_language_vietnamese">Vietnamese</string>
     <string name="core_manage_account">Manage Account</string>
 
     <string name="core_title_syncing_calendar" tools:ignore="MissingTranslation">Syncing calendar…</string>

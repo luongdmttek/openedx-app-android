@@ -50,6 +50,7 @@ import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import org.openedx.core.domain.model.VideoSettings
+import org.openedx.core.domain.model.AppLanguage
 import org.openedx.core.ui.Toolbar
 import org.openedx.core.ui.displayCutoutForLandscape
 import org.openedx.core.ui.noRippleClickable
@@ -86,9 +87,11 @@ class VideoSettingsFragment : Fragment() {
                 val windowSize = rememberWindowSize()
 
                 val videoSettings by viewModel.videoSettings.observeAsState(viewModel.currentSettings)
+                val appLanguage by viewModel.appLanguage.observeAsState(viewModel.currentLanguage)
 
                 VideoSettingsScreen(
                     videoSettings = videoSettings,
+                    appLanguage = appLanguage,
                     windowSize = windowSize,
                     onBackClick = {
                         requireActivity().supportFragmentManager.popBackStack()
@@ -101,6 +104,9 @@ class VideoSettingsFragment : Fragment() {
                     },
                     videoDownloadQualityClick = {
                         viewModel.navigateToVideoDownloadQuality(requireActivity().supportFragmentManager)
+                    },
+                    languageSelectorClick = {
+                        viewModel.navigateToLanguageSelector(requireActivity().supportFragmentManager)
                     }
                 )
             }
@@ -113,9 +119,11 @@ class VideoSettingsFragment : Fragment() {
 private fun VideoSettingsScreen(
     windowSize: WindowSize,
     videoSettings: VideoSettings,
+    appLanguage: AppLanguage,
     wifiDownloadChanged: (Boolean) -> Unit,
     videoStreamingQualityClick: () -> Unit,
     videoDownloadQualityClick: () -> Unit,
+    languageSelectorClick: () -> Unit,
     onBackClick: () -> Unit,
 ) {
     val scaffoldState = rememberScaffoldState()
@@ -290,6 +298,37 @@ private fun VideoSettingsScreen(
                             )
                         }
                         Divider()
+                        Row(
+                            Modifier
+                                .testTag("btn_language_selector")
+                                .fillMaxWidth()
+                                .height(92.dp)
+                                .clickable {
+                                    languageSelectorClick()
+                                },
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Column(Modifier.weight(1f)) {
+                                Text(
+                                    text = stringResource(id = CoreR.string.core_language),
+                                    color = MaterialTheme.appColors.textPrimary,
+                                    style = MaterialTheme.appTypography.titleMedium
+                                )
+                                Spacer(Modifier.height(4.dp))
+                                Text(
+                                    text = stringResource(id = appLanguage.titleResId),
+                                    color = MaterialTheme.appColors.textSecondary,
+                                    style = MaterialTheme.appTypography.labelMedium
+                                )
+                            }
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                                tint = MaterialTheme.appColors.onSurface,
+                                contentDescription = stringResource(CoreR.string.core_accessibility_expandable_arrow)
+                            )
+                        }
+                        Divider()
                     }
                 }
             }
@@ -307,8 +346,10 @@ private fun VideoSettingsScreenPreview() {
             wifiDownloadChanged = {},
             videoStreamingQualityClick = {},
             videoDownloadQualityClick = {},
+            languageSelectorClick = {},
             onBackClick = {},
-            videoSettings = VideoSettings.default
+            videoSettings = VideoSettings.default,
+            appLanguage = AppLanguage.ENGLISH,
         )
     }
 }

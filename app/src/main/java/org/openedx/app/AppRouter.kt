@@ -14,6 +14,7 @@ import org.openedx.core.FragmentViewType
 import org.openedx.core.presentation.global.appupgrade.AppUpgradeRouter
 import org.openedx.core.presentation.global.appupgrade.UpgradeRequiredFragment
 import org.openedx.core.presentation.global.webview.WebContentFragment
+import org.openedx.core.presentation.settings.language.LanguageSelectFragment
 import org.openedx.core.presentation.settings.video.VideoQualityFragment
 import org.openedx.core.presentation.settings.video.VideoQualityType
 import org.openedx.course.presentation.CourseRouter
@@ -420,7 +421,7 @@ class AppRouter :
     }
 
     override fun navigateToLanguageSelector(fm: FragmentManager) {
-//        replaceFragmentWithBackStack(fm, LanguageSelectFragment())
+        replaceFragmentWithBackStack(fm, LanguageSelectFragment())
     }
 
     override fun navigateToDiscover(fm: FragmentManager) {

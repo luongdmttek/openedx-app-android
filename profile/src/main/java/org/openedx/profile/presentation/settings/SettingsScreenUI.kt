@@ -181,9 +181,6 @@ internal fun SettingsScreen(
                                         },
                                         onCalendarSettingsClick = {
                                             onAction(SettingsScreenAction.CalendarSettingsClick)
-                                        },
-                                        onLanguageSelectorClick = {
-                                            onAction(SettingsScreenAction.LanguageSelectorClick)
                                         }
                                     )
 

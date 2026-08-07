@@ -92,12 +92,6 @@ class SettingsFragment : Fragment() {
                                     requireActivity().supportFragmentManager
                                 )
                             }
-
-                            SettingsScreenAction.LanguageSelectorClick -> {
-                                viewModel.languageSelectorClicked(
-                                    requireActivity().supportFragmentManager
-                                )
-                            }
                         }
                     }
                 )

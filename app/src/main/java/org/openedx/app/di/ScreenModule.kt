@@ -14,6 +14,7 @@ import org.openedx.auth.presentation.signup.SignUpViewModel
 import org.openedx.core.Validator
 import org.openedx.core.domain.interactor.CalendarInteractor
 import org.openedx.core.presentation.dialog.selectorbottomsheet.SelectDialogViewModel
+import org.openedx.core.presentation.settings.language.LanguageSelectViewModel
 import org.openedx.core.presentation.settings.video.VideoQualityViewModel
 import org.openedx.core.repository.CalendarRepository
 import org.openedx.course.data.repository.CourseRepository
@@ -210,6 +211,7 @@ val screenModule = module {
     }
     viewModel { VideoSettingsViewModel(get(), get(), get(), get()) }
     viewModel { (qualityType: String) -> VideoQualityViewModel(qualityType, get(), get(), get()) }
+    viewModel { LanguageSelectViewModel(get()) }
     viewModel { DeleteProfileViewModel(get(), get(), get(), get(), get()) }
     viewModel { (username: String) -> AnothersProfileViewModel(get(), get(), username) }
     viewModel {

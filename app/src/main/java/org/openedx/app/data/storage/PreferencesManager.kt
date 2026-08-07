@@ -144,6 +144,12 @@ class PreferencesManager(context: Context) :
             )
         }
 
+    override var appLanguage: String
+        set(value) {
+            saveString(APP_LANGUAGE, value)
+        }
+        get() = getString(APP_LANGUAGE)
+
     override var appConfig: AppConfig
         set(value) {
             val appConfigJson = Gson().toJson(value)
@@ -232,6 +238,7 @@ class PreferencesManager(context: Context) :
         private const val VIDEO_SETTINGS_WIFI_DOWNLOAD_ONLY = "video_settings_wifi_download_only"
         private const val VIDEO_SETTINGS_STREAMING_QUALITY = "video_settings_streaming_quality"
         private const val VIDEO_SETTINGS_DOWNLOAD_QUALITY = "video_settings_download_quality"
+        private const val APP_LANGUAGE = "app_language"
         private const val APP_CONFIG = "app_config"
         private const val CALENDAR_ID = "CALENDAR_ID"
         private const val RESET_APP_DIRECTORY = "reset_app_directory"

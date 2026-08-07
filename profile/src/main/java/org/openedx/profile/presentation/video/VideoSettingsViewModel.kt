@@ -8,7 +8,9 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import org.openedx.core.data.storage.CorePreferences
+import org.openedx.core.domain.model.AppLanguage
 import org.openedx.core.domain.model.VideoSettings
+import org.openedx.core.utils.LocaleManager
 import org.openedx.core.presentation.settings.video.VideoQualityType
 import org.openedx.core.system.notifier.VideoNotifier
 import org.openedx.core.system.notifier.VideoQualityChanged
@@ -29,11 +31,19 @@ class VideoSettingsViewModel(
     val videoSettings: LiveData<VideoSettings>
         get() = _videoSettings
 
+    private val _appLanguage = MutableLiveData<AppLanguage>()
+    val appLanguage: LiveData<AppLanguage>
+        get() = _appLanguage
+
     val currentSettings: VideoSettings
         get() = preferencesManager.videoSettings
 
+    val currentLanguage: AppLanguage
+        get() = LocaleManager.getCurrentLanguage(preferencesManager)
+
     init {
         _videoSettings.value = preferencesManager.videoSettings
+        _appLanguage.value = currentLanguage
     }
 
     override fun onCreate(owner: LifecycleOwner) {
@@ -71,6 +81,10 @@ class VideoSettingsViewModel(
             fragmentManager,
             VideoQualityType.Download
         )
+    }
+
+    fun navigateToLanguageSelector(fragmentManager: FragmentManager) {
+        router.navigateToLanguageSelector(fragmentManager)
     }
 
     private fun logProfileEvent(

@@ -14,12 +14,15 @@ import org.openedx.app.di.appModule
 import org.openedx.app.di.networkingModule
 import org.openedx.app.di.screenModule
 import org.openedx.core.config.Config
+import org.openedx.core.data.storage.CorePreferences
+import org.openedx.core.utils.LocaleManager
 import org.openedx.firebase.OEXFirebaseAnalytics
 
 class OpenEdXApp : Application() {
 
     private val config by inject<Config>()
     private val pluginManager by inject<PluginManager>()
+    private val corePreferences by inject<CorePreferences>()
 
     override fun onCreate() {
         super.onCreate()
@@ -31,6 +34,7 @@ class OpenEdXApp : Application() {
                 screenModule
             )
         }
+        LocaleManager.applySavedLocale(corePreferences)
         if (config.getFirebaseConfig().enabled) {
             FirebaseApp.initializeApp(this)
         }

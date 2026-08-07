@@ -11,6 +11,7 @@ interface CorePreferences {
     var accessTokenExpiresAt: Long
     var user: User?
     var videoSettings: VideoSettings
+    var appLanguage: String
     var appConfig: AppConfig
     var canResetAppDirectory: Boolean
     var isRelativeDatesEnabled: Boolean
